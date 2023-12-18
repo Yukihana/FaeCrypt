@@ -1,0 +1,67 @@
+﻿<Window x:Class="FAegis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        SnapsToDevicePixels="True" UseLayoutRounding="True"
+        SizeToContent="Height"
+        xmlns:local="clr-namespace:FAegis"
+        mc:Ignorable="d"
+        Title="FAegis File Encryptor" Width="500">
+    <Window.Resources>
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="Margin" Value="3" />
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Margin" Value="4" />
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="4" />
+            <Setter Property="Padding" Value="4" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="MinWidth" Value="100" />
+            <Setter Property="MinHeight" Value="26" />
+        </Style>
+        <Style TargetType="{x:Type CheckBox}">
+            <Setter Property="Margin" Value="4" />
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="3">
+        <GroupBox Header="Source Path">
+            <DockPanel>
+                <Button Content="Browse..." DockPanel.Dock="Right" />
+                <TextBox />
+            </DockPanel>
+        </GroupBox>
+        <GroupBox Header="Target Path">
+            <StackPanel Orientation="Vertical">
+                <DockPanel>
+                    <Button Content="Browse..." DockPanel.Dock="Right" />
+                    <TextBox />
+                </DockPanel>
+                <UniformGrid Rows="1">
+                    <CheckBox Content="Auto-name" ToolTip="Use detected/generated name instead of the provided one (if any)." />
+                    <CheckBox Content="Overwrite" />
+                </UniformGrid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Password">
+            <DockPanel>
+                <UniformGrid Rows="1" DockPanel.Dock="Right">
+                    <Button Content="Encrypt" />
+                    <Button Content="Decrypt" />
+                </UniformGrid>
+                <PasswordBox Margin="4" VerticalContentAlignment="Center" />
+            </DockPanel>
+        </GroupBox>
+        <GroupBox Header="Progress">
+            <DockPanel>
+                <UniformGrid Rows="1" DockPanel.Dock="Right">
+                    <Button Content="Cancel" />
+                    <Button Content="Reset" />
+                </UniformGrid>
+                <ProgressBar Margin="4" />
+            </DockPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>

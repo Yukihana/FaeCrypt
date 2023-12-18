@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaeCrypt", "FaeCrypt\FaeCrypt.csproj", "{9EA4C904-B37F-4332-9DC7-D470522A755A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCode", "TestCode\TestCode.csproj", "{7ABAD7CD-CEDF-40C2-9980-F84F3D2B3049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCode", "TestCode\TestCode.csproj", "{7ABAD7CD-CEDF-40C2-9980-F84F3D2B3049}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAegis", "FAegis\FAegis.csproj", "{32A33231-85E9-4E51-9713-156EA6D748E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7ABAD7CD-CEDF-40C2-9980-F84F3D2B3049}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ABAD7CD-CEDF-40C2-9980-F84F3D2B3049}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ABAD7CD-CEDF-40C2-9980-F84F3D2B3049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A33231-85E9-4E51-9713-156EA6D748E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A33231-85E9-4E51-9713-156EA6D748E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A33231-85E9-4E51-9713-156EA6D748E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A33231-85E9-4E51-9713-156EA6D748E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
